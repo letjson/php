@@ -6,6 +6,10 @@
         "version": "0.9.1",
         "description": "letJson() function & LetJson class are downloading *.json files",
         "type": "library",
+        "source": {
+          "type": "git",
+          "url": "https://github.com/letjson/php.git"
+        },
         "authors": [
           {
             "name": "Tom Sapletta",
