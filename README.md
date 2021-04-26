@@ -1,5 +1,9 @@
 # Php composer
-## How to use in your pproject?
+## How to use in your project?
+SATIS
+
+    php composer.phar create-project composer/satis --stability=dev --keep-vcs
+
 
 create packages.json
 
