@@ -1,8 +1,35 @@
 {
   "packages": {
     "letjson/php": {
-      "dev-master": { @composer.json },
-      "1.0.0": { @composer.json }
+      "dev-master": {
+        "name": "letjson/php",
+        "version": "3.1.7",
+        "description": "letJson() function & LetJson class are downloading *.json files",
+        "type": "library",
+        "dist": {
+          "url": "https://php.letjson.php/letjson.php",
+          "type": "zip"
+        },
+        "authors": [
+          {
+            "name": "Tom Sapletta",
+            "email": "info@softreck.dev"
+          }
+        ],
+        "require": {
+          "php": ">=7.0"
+        },
+        "autoload": {
+          "psr-4": {
+            "": ""
+          }
+        },
+        "extra": {
+          "branch-alias": {
+            "dev-master": "1.0.x-dev"
+          }
+        }
+      }
     }
   }
 }
