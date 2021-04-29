@@ -4,7 +4,7 @@
       "dev-master": {
         "name": "letjson/php",
         "version": "0.9.1",
-        "description": "letJson() function & LetJson class are downloading *.json files",
+        "description": "let_json(), newLetJson() function & LetJson class are downloading *.json files",
         "type": "library",
         "source": {
           "type": "git",

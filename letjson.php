@@ -1,6 +1,6 @@
 <?php
 
-namespace letjson;
+//namespace letjson;
 
 /**
  * @param string $url
@@ -25,7 +25,7 @@ class LetJson
 
     function __construct($url)
     {
-        $this->json = letJson($url);
+        $this->json = let_json($url);
     }
 
     /**
