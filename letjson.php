@@ -6,7 +6,7 @@ namespace letjson;
  * @param string $url
  * @return mixed
  */
-function letJson($url)
+function let_json($url)
 {
     $file = file_get_contents($url, true);
 //    $json = json_decode($file, true);
