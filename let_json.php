@@ -6,11 +6,15 @@
  * @param string $url
  * @return mixed
  */
-function let_json($url, $callback, $associative = false)
+function let_json($url, $callback = null, $associative = false)
 {
     $file = file_get_contents($url, true);
     $json = json_decode($file, $associative);
-    $callback($json);
+
+    if (is_callable($callback)) {
+        $callback($json);
+    }
+
     return $json;
 }
 
