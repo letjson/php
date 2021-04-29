@@ -1,6 +1,6 @@
 # Php composer
-https://php.letjson.com/#/
-https://php.letjson.com/#/
+https://php.letjson.com/
+https://github.com/letjson/php.git
 
 ## How to use in your project?
 SATIS
