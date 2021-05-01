@@ -3,8 +3,10 @@
 //namespace letjson;
 
 /**
- * @param string $url
- * @return mixed
+ * @param $url
+ * @param null $callback
+ * @param false $associative
+ * @return false|mixed|string
  */
 function let_json($url, $callback = null, $associative = false)
 {
@@ -37,8 +39,16 @@ class LetJson
     /** @var array|mixed */
     public $json = [];
 
+    /** @var string  */
+    public $url = '';
+
+    /**
+     * LetJson constructor.
+     * @param $url
+     */
     function __construct($url)
     {
+        $this->url = $url;
         $this->json = let_json($url);
     }
 
