@@ -7,6 +7,8 @@
  * @param null $callback
  * @param false $associative
  * @return false|mixed|string
+ *
+ * @throws Exception
  */
 function let_json($url, $callback = null, $associative = false)
 {
