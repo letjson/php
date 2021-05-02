@@ -10,6 +10,13 @@
  */
 function let_json($url, $callback = null, $associative = false)
 {
+    if (empty($url)){
+        throw new Exception("Url: " . $url . " is empty");
+    }
+
+    if (!file_exists($url)) {
+        throw new Exception("Url: " . $url . " not exist");
+    }
     $file = file_get_contents($url, true);
     $json = json_decode($file, $associative);
 
