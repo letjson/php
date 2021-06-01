@@ -8,7 +8,6 @@ let_json.php
 def_json.php
 
 # DOCS JSON data
-meta.json
 docs.json
 index.json
 
