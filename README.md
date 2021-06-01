@@ -1,6 +1,6 @@
-# Php composer
-https://php.letjson.com/
-https://github.com/letjson/php.git
+# let_json - Php Function 
++ [php composer for letjson - php.letjson.com](https://php.letjson.com/#/)
+
 
 ## How to use in your project?
 SATIS
@@ -32,3 +32,6 @@ https://github.com/letjson/php.git
 
 ---
 + [edit](https://github.com/letjson/php/edit/main/README.md)
+```
+https://github.com/letjson/php.git
+```
