@@ -23,7 +23,7 @@ function let_json($url, $callback = null, $associative = false)
     $json = json_decode($file, $associative);
 
     if (is_callable($callback)) {
-        $callback($json);
+        return $callback($json);
     }
 
     return $json;
