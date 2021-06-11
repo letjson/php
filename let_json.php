@@ -16,11 +16,22 @@ function let_json($url, $callback = null, $associative = false)
         throw new Exception("Url: " . $url . " is empty");
     }
 
-    if (!file_exists($url)) {
-        throw new Exception("Url: " . $url . " not exist");
+    $urls = [];
+    if (!is_array($url)){
+        $urls[] = $url;
     }
-    $file = file_get_contents($url, true);
-    $json = json_decode($file, $associative);
+
+    foreach($urls as $url){
+        if (!file_exists($url)) {
+            throw new Exception("Url: " . $url . " not exist");
+        }
+        $file = file_get_contents($url, true);
+        if(count($urls)>1){
+            $json[] = json_decode($file, $associative);
+        } else {
+            $json = json_decode($file, $associative);
+        }
+    }
 
     if (is_callable($callback)) {
         return $callback($json);
