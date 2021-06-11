@@ -3,7 +3,7 @@
 //namespace letjson;
 
 /**
- * @param $url
+ * @param array|string $url
  * @param null $callback
  * @param false $associative
  * @return false|mixed|string
@@ -13,17 +13,19 @@
 function let_json($url, $callback = null, $associative = false)
 {
     if (empty($url)){
-        throw new Exception("Url: " . $url . " is empty");
+        throw new Exception("Url: $url is empty");
     }
 
     $urls = [];
     if (!is_array($url)){
         $urls[] = $url;
+    } else {
+        $urls = $url;
     }
 
-    foreach($urls as $url){
-        if (!file_exists($url)) {
-            throw new Exception("Url: " . $url . " not exist");
+    foreach($urls as $url_item){
+        if (!file_exists($url_item)) {
+            throw new Exception("Url: $url_item not exist");
         }
         $file = file_get_contents($url, true);
         if(count($urls)>1){
