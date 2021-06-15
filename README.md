@@ -23,6 +23,10 @@ command:
 
     composer install
 
+
+php composer.phar install
+
+
 ## GIT:
 https://github.com/letjson/php.git
 
